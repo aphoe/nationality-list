@@ -1,0 +1,11 @@
+{
+    "name": "dinushchathurya/nationality-list",
+    "type": "package",
+    "authors": [
+        {
+            "name": "dinushchathurya",
+            "email": "dinushchathurya21@gmail.com"
+        }
+    ],
+    "require": {}
+}
