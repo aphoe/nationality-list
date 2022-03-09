@@ -11,4 +11,11 @@ class NationalityListServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
+
+    public function register()
+    {
+        $this->publishes([
+            __DIR__ . '/../database/seeders/' => base_path('database/seeders/'),
+        ]);
+    }
 }

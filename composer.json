@@ -7,5 +7,18 @@
             "email": "dinushchathurya21@gmail.com"
         }
     ],
-    "require": {}
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Dinushchathurya\\NationalityList\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dinushchathurya\\NationalityList\\NationalityListServiceProvider"
+            ]
+        }
+    }
 }
