@@ -13,7 +13,7 @@ class NationalityListTableSeeder extends Seeder
         DB::unprepared($this->getNationalitySql());
     }
 
-    private function getCountrySql()
+    private function getNationalitySql()
     {
         return "INSERT INTO `nationality_lists` (`id`, `name`) VALUES
             (1, 'Afghanistan'),
