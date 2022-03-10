@@ -15,12 +15,5 @@
         "psr-4": {
             "Dinushchathurya\\NationalityList\\": "src/"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Dinushchathurya\\NationalityList\\NationalityListServiceProvider"
-            ]
-        }
     }
 }
