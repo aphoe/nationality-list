@@ -5,7 +5,7 @@ namespace Dinushchathurya\NationalityList;
 class Nationality{
 	
 	public static function getNationalities(){
-        return array_keys(self::$Nationality);
+        return (self::$Nationality);
     }
 
     public static $Nationality = array(
