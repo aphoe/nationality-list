@@ -7,8 +7,9 @@ class NationalityListServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
-        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
+        // $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+        // $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
+        $this->publishResources();
     }
 
     public function register()
@@ -16,5 +17,12 @@ class NationalityListServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/database/seeders/' => base_path('database/seeders/'),
         ]);
+    }
+
+    protected function publishResources()
+    {
+        $this->publishes([
+            __DIR__ . '/database/migrations/create_nationality_lists_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . 'create_nationality_lists_table.php'),
+        ], 'nationality-migrations');
     }
 }
