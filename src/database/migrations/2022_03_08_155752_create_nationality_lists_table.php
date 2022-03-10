@@ -11,7 +11,6 @@ class CreateNationalityListsTable extends Migration
         Schema::create('nationality_lists', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->timestamps();
         });
     }
     
