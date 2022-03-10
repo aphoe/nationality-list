@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/uptime-100%25-brightgreen">
 </p>
 
-<h1 align="center">Laravel Srilankan Telephone Number Validator</h1>
+<h1 align="center">All Nationalities List</h1>
   <p align="center">
     This package is a Laravel package that contains all Nationalities.
   </p><br><br>
@@ -38,6 +38,7 @@ public function exampleFunction(){
 
     return Nationality::getNationalities(); // Returns all nationalities 
 }
+
 ```
 
 ## Contributing
