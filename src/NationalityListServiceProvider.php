@@ -22,7 +22,7 @@ class NationalityListServiceProvider extends ServiceProvider
     protected function publishResources()
     {
         $this->publishes([
-            __DIR__ . '/database/migrations/create_nationality_lists_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . 'create_nationality_lists_table.php'),
+            __DIR__ . '/database/migrations/create_nationality_lists_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_nationality_lists_table.php'),
         ], 'nationality-migrations');
     }
 }
