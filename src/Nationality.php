@@ -139,6 +139,7 @@ class Nationality{
         'New Zealander',
         'Nicaraguan',
         'Nigerian',
+        'Nigerien',
         'North Korean',
         'Northern Irish',
         'Norwegian',
